@@ -1,7 +1,28 @@
 aid: saudara-ai
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/saudara-ai.png
 name: Saudara Ai
-description: Saudara Ai is a company surfaced as a portfolio company of y-combinator and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Saudara AI is an AI-native sourcing brokerage, founded in 2024 and based in
+  Spokane, Washington, that connects American brands with vetted Indonesian
+  manufacturers. Buyers submit requests for quotes (RFQs) and the company pairs
+  human brokers with AI agents that scan factories, verify certifications,
+  benchmark pricing against market data, and prepare quotes, returning vetted
+  supplier options within 48 hours. Saudara AI also handles quality control,
+  logistics, improved payment terms (30/70 and net-60), and vendor financing.
+  As of its launch the company reports having sourced over $1M for 40+ brands.
+  It operates as a brokerage service and does not publish a public developer
+  API, documentation, or SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/saudara-ai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +32,28 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Sourcing
+- Manufacturing
+- Supply Chain
+- Procurement
+- Artificial Intelligence
+- Indonesia
 apis: []
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+common:
+- type: DomainSecurity
+  url: security/saudara-ai-domain-security.yml
+- type: Website
+  url: https://saudara.ai
+- type: Company
+  url: https://www.ycombinator.com/companies/saudara
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
